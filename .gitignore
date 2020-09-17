@@ -39,3 +39,28 @@ vendor/bundle/bin/byebug
 
 /vender/*
 package-lock.json
+
+## Environment normalisation:
+/.bundle
+/vendor/bundle
+
+# Ignore IDE files
+.idea
+master.key
+credentials.yml.enc/public/packs
+/public/packs-test
+/public/packs
+/node_modules
+yarn-debug.log*
+.yarn-integrity
+/public/packs
+/public/packs-test
+/node_modules
+yarn-debug.log*
+.yarn-integrity
+yarn-error.log*
+.vscode
+
+# Ignore bundled assets
+/public
+
