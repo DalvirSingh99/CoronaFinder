@@ -1,11 +1,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import {BrowserRouter, Switch, Route} from 'react-router-dom'
-import TriageContainer from '../containers/Triage'
-import QuestionnaireContainer from '../containers/Questionnaire'
-import DemographicContainer from '../containers/Demographics'
 import {withRouter} from 'react-router'
-import Loading from '../components/Loading'
+import Signup from '../components/Signup'
+
 class App extends React.Component{
     constructor(props){
         super(props)
@@ -14,10 +12,7 @@ class App extends React.Component{
         return(
             <BrowserRouter>
                 <Switch>
-                    <Route exact path ="/" render={() => <DemographicContainer/>}/>
-                    <Route exact path ="/questions" render={() => <QuestionnaireContainer/>}/>
-                    <Route exact path ="/loading" render={() => <Loading/>}/>
-                    <Route exact path ="/result" render={() => <TriageContainer/>}/>
+                    <Route exact path ="/" render={() => <Signup/>}/>
                 </Switch>
             </BrowserRouter>
         )
